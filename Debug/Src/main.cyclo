@@ -1,0 +1,4 @@
+../Src/main.c:28:6:delay	2
+../Src/main.c:41:6:SPI2_GPIOInits	1
+../Src/main.c:69:6:SPI2_Init	1
+../Src/main.c:84:5:main	1
