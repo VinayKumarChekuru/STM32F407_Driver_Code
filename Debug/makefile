@@ -61,7 +61,7 @@ main-build: STM32F407_Driver_Code_Version001.elf secondary-outputs
 
 # Tool invocations
 STM32F407_Driver_Code_Version001.elf STM32F407_Driver_Code_Version001.map: $(OBJS) $(USER_OBJS) D:\Work_Space\STM32F407_Driver_Code_Version001\STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "STM32F407_Driver_Code_Version001.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\Work_Space\STM32F407_Driver_Code_Version001\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32F407_Driver_Code_Version001.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+	arm-none-eabi-gcc -o "STM32F407_Driver_Code_Version001.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\Work_Space\STM32F407_Driver_Code_Version001\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32F407_Driver_Code_Version001.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

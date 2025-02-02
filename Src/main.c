@@ -52,13 +52,13 @@ void SPI2_GPIOInits(void)
 
 
 	//SCLK
-	GPIO_Init(GPIOB);
+	GPIO_Init(&SPI_Pins);
     //NSS
-	SPI_Pins.GPIO_PinConfig.GPIO_PinNumber = GIPO_PIN_NO_12;
-	GPIO_Init(GPIOB);
+//	SPI_Pins.GPIO_PinConfig.GPIO_PinNumber = GIPO_PIN_NO_12;
+//	GPIO_Init(GPIOB);
 	//MISO
-	SPI_Pins.GPIO_PinConfig.GPIO_PinNumber = GIPO_PIN_NO_14;
-	GPIO_Init(GPIOB);
+//	SPI_Pins.GPIO_PinConfig.GPIO_PinNumber = GIPO_PIN_NO_14;
+//	GPIO_Init(GPIOB);
     //MOSI
 	SPI_Pins.GPIO_PinConfig.GPIO_PinNumber = GIPO_PIN_NO_15;
 	GPIO_Init(GPIOB);
@@ -126,8 +126,9 @@ SPI2_GPIOInits();
 //This Function is used to initialize the SPI2 Pheripherals
 SPI2_Init();
 
-//ENable the SPI2 Pheripheral
 
+//ENable the SPI2 Pheripheral
+SPI_SSIConfig(SPI2,ENABLE);
 SPI_Pheripheral_Control(SPI2,ENABLE);
 
 SPI_SendData(SPI2, (uint8_t*)user_data, strlen(user_data));

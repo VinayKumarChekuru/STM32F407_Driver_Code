@@ -125,6 +125,8 @@ void SPI_ReceiveData(SPI_RegDef_t *pSPIx, uint8_t *pRxBuffer, uint32_t len);
  */
 void SPI_Pheripheral_Control(SPI_RegDef_t *pSPIx, uint8_t EnorDi);
 
+void SPI_SSIConfig(SPI_RegDef_t *pSPIx, uint8_t EnorDi);
+
 /*
  * SPI interrupts
  */
