@@ -1,0 +1,7 @@
+../Driver/src/stm32f407xx_usart_driver.c:16:9:USART_Get_TC_FlagStatus	16	static
+../Driver/src/stm32f407xx_usart_driver.c:30:9:USART_GetFlagStatus	16	static
+../Driver/src/stm32f407xx_usart_driver.c:46:6:USART_ClockControl	16	static
+../Driver/src/stm32f407xx_usart_driver.c:184:6:USART_Init	24	static
+../Driver/src/stm32f407xx_usart_driver.c:264:6:USART_DeInit	16	static
+../Driver/src/stm32f407xx_usart_driver.c:294:6:USART_SendData	32	static
+../Driver/src/stm32f407xx_usart_driver.c:343:6:USART_ReceiveData	32	static
