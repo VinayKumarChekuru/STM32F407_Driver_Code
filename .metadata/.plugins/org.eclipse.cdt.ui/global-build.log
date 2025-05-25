@@ -1,0 +1,21 @@
+12:11:56 **** Incremental Build of configuration Debug for project STM32F407_Driver_Code ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"C:/Users/vinaykumar/Desktop/Youtube_Workspace/STM32F407_Driver_Code/Drivers" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "STM32F407_Driver_Code.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\vinaykumar\Desktop\Youtube_Workspace\STM32F407_Driver_Code\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32F407_Driver_Code.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32F407_Driver_Code.elf
+ 
+arm-none-eabi-size  STM32F407_Driver_Code.elf 
+arm-none-eabi-objdump -h -S STM32F407_Driver_Code.elf  > "STM32F407_Driver_Code.list"
+   text	   data	    bss	    dec	    hex	filename
+   1896	      0	   1568	   3464	    d88	STM32F407_Driver_Code.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32F407_Driver_Code.list
+ 
+12:12:56 **** Incremental Build of configuration Debug for project STM32F407_Driver_Code ****
+make -j8 all 
+arm-none-eabi-size  STM32F407_Driver_Code.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1896	      0	   1568	   3464	    d88	STM32F407_Driver_Code.elf
+Finished building: default.size.stdout
+ 

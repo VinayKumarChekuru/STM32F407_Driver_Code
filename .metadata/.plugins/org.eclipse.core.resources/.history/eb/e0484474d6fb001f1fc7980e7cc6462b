@@ -1,0 +1,33 @@
+/*
+ * GPIO_Driver.h
+ *
+ *  Created on: Mar 3, 2025
+ *      Author: vinaykumar
+ */
+
+#ifndef GPIO_DRIVER_H_
+#define GPIO_DRIVER_H_
+
+
+
+//Clock Enable or Disable API
+
+void GPIO_ClockControl();
+
+//GPIO Init and GPIO Deint
+
+void GPIO_Init(void);
+void GPIO_DeInit(void);
+
+//Read Write
+
+void GPIO_ReadFromIn_Pin(void);
+void GPIO_ReadFromIn_Port(void);
+
+void GPIO_WriteToOut_Pin(void);
+void GPIO_WriteToOut_Port(void);
+
+
+
+
+#endif /* GPIO_DRIVER_H_ */

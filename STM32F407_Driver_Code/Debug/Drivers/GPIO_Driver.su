@@ -1,0 +1,7 @@
+../Drivers/GPIO_Driver.c:9:6:GPIO_ClockControl	16	static
+../Drivers/GPIO_Driver.c:91:6:GPIO_Init	24	static
+../Drivers/GPIO_Driver.c:149:6:GPIO_DeInit	16	static
+../Drivers/GPIO_Driver.c:189:9:GPIO_ReadFromIn_Pin	24	static
+../Drivers/GPIO_Driver.c:196:10:GPIO_ReadFromIn_Port	24	static
+../Drivers/GPIO_Driver.c:203:6:GPIO_WriteToOut_Pin	16	static
+../Drivers/GPIO_Driver.c:214:6:GPIO_WriteToOut_Port	16	static

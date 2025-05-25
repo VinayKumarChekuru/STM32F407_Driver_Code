@@ -1,0 +1,7 @@
+../Drivers/GPIO_Driver.c:9:6:GPIO_ClockControl	21
+../Drivers/GPIO_Driver.c:91:6:GPIO_Init	3
+../Drivers/GPIO_Driver.c:149:6:GPIO_DeInit	10
+../Drivers/GPIO_Driver.c:189:9:GPIO_ReadFromIn_Pin	1
+../Drivers/GPIO_Driver.c:196:10:GPIO_ReadFromIn_Port	1
+../Drivers/GPIO_Driver.c:203:6:GPIO_WriteToOut_Pin	3
+../Drivers/GPIO_Driver.c:214:6:GPIO_WriteToOut_Port	1
